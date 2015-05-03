@@ -1,0 +1,13 @@
+# Site settings
+title: Otago Children's Autism Support Group
+email: hello@otagokidsautism.org
+description: >
+  Group of pro-active Dunedin parents who have autistic children, committed
+  to helping organise and fundraise for intensive early interventions.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://otagokidsautism.org" # the base hostname & protocol for your site
+twitter_username: otagokidsautism
+
+# Build settings
+markdown: kramdown
+highlighter: rouge

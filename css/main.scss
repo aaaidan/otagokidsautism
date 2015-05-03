@@ -1,0 +1,209 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+
+// Our variables
+$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-size:   13px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$background-color: #e1e2e2;
+$content-background-color: #fff;
+$text-color:       #111;
+$brand-color:      #E45127;
+$link-color:       #277395;
+$link-hover-color: #739f3f;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+
+
+// Using media queries with like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout"
+        //"syntax-highlighting"
+;
+
+
+.header-logo {
+	display: block;
+
+	padding: 0px;
+	margin: 0px;
+	height: 48px;
+	background-image: url(img/header-rectangle.jpg);
+	background-repeat: no-repeat;
+	background-position: right top;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #E45127 !important; // TODO: Make this border part of a wrapping style-only div
+	width: 950px;
+}
+
+.site-header {
+	nav {
+		@extend %clearfix;
+
+		background-color: #feeba4;
+		height: 30px;
+
+		ul, li {
+			margin: 0;
+			padding: 0;
+		}
+		li {
+			width: auto;
+			float: left;
+			list-style-type: none;
+			a {
+				display: block;
+				text-decoration: none;
+				color: #277395;
+				line-height: 1;
+				padding-top: 8px;
+				padding-right: 17px;
+				padding-bottom: 8px;
+				padding-left: 17px;
+				font-family: arial, sans-serif;
+				font-size: 14px;
+				font-weight: bold;
+				&:active, &:hover, &:focus {
+					background-color: #FFFFFF;
+					color: #739f3f;
+					letter-spacing: .01px;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}
+
+.search {
+	text-align:right;
+
+	margin: 20px 0;
+	margin-right: 40px;
+
+	input {
+
+	}
+	button {
+		color: #277395;
+		background-color: #fff;
+		border: none;
+		text-transform: uppercase;
+		cursor: pointer;
+
+		&:hover {
+			color: #739f3f;
+		}
+	}
+}
+
+.content {
+	margin-bottom: 30px;
+
+	ul {
+		list-style:none;
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		padding-left: 20px;
+		margin-top: 0px;
+		margin-bottom: 0em;
+		padding-bottom: 10px;
+		margin-right: 0px;
+		margin-left: 0px;
+		padding-right: 0px;
+		text-decoration: none;
+		padding-top: 0px;
+		background-image: url(img/bullet-blue.jpg);
+		background-repeat: no-repeat;
+		background-position: 0em 0.45em;
+	}
+
+	p {
+		margin: 10px 0;
+	}
+
+	a {
+		text-decoration: none;
+		border-bottom: 1px dotted $link-color;
+
+		&:hover {
+			border-bottom-color: $link-hover-color;
+		}
+	}
+}
+
+.site-footer {
+
+	@extend %clearfix;
+
+	text-align: center;
+	display: block;
+	padding-top: 4px;
+	padding-right: 0px;
+	padding-bottom: 4px;
+	padding-left: 0px;
+	background-color: #fef4ce;
+	font-size: 11px;
+	border: 1px solid #feeba4;
+	margin: 0px 40px;
+	margin-bottom: 20px;
+
+	a, a:visited, a:active {
+		background-color: transparent;
+		color: #277395;
+		text-decoration: none;
+		padding-top: 6px;
+		padding-right: 0px;
+		padding-bottom: 0px;
+		padding-left: 0px;
+		margin-top: 0px;
+		margin-right: 40px;
+		margin-bottom: 0px;
+		margin-left: 0px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	a:hover {
+		color: #739f3f;
+		text-decoration: none;
+		border-bottom: 1px dotted #739f3f;
+	}
+}
+
+
+@import "home.scss";

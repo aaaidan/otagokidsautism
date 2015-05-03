@@ -1,0 +1,43 @@
+---
+layout: home
+---
+
+<div class="l-home-cols">
+<div class="l-home-col-1">
+	<div class="home-news-heading">
+		<img src="css/img/news-events.jpg" alt="News, Events, and Stories" />
+	</div>
+
+	<div class="home-news-content"> 
+
+	{% for post in site.posts %}
+	<div class="home-news-post-wrapper">      
+		<span class="dates">{{ post.date }}</span>
+		<h1>{{ post.title }}</h1>
+		{{ post.content }}
+	</div>
+    {% endfor %}
+
+	<div class="arrow"><img src="css/img/arrow.gif" alt="arrow" width="18" height="14"></div>
+	<div class="dontprinttext"><a href="/news/index.html">read older posts</a></div>              
+	
+	</div>
+
+</div>
+<div class="l-home-col-2">
+	<div class="home-facts-heading">
+		<img src="css/img/quickfacts.jpg" alt="Quick facts about the group" />
+	</div>
+
+	<div class="home-facts-content">
+		<ul> 
+		<li>The charitable trust was set up in 2004. We rely mostly on <a href="/funding.html">grants, donations and our fundraising</a> to pay for therapists’ wages and training, and for education for parents, teachers and the community.</li> 
+		<li> The trust focuses on raising funds for <a href="/introABA_therapy.html" target="_parent">Applied Behavioural Analysis (ABA) therapy</a>.  This involves targeted individual learning programmes, and one-on-one teaching in the home, and also in school. Therapy hours are flexible and able to meet the requirements of the child and family. </li> 
+		<li> We have <a href="/therapists.html">great therapists</a> who are terrific with the kids. The therapists are trained and assessed regularly under the umbrella of our service provider, Intervention Services for Autism and Developmental Delay (ISADD). </li> 
+		<li> <a href="/profiles.html">Our children</a> range from pre-school to school age.</li> 
+		<li> While ABA is government funded in some countries, it is not yet publicly funded in New Zealand.</li>
+		</ul>
+	</div>
+
+</div>
+</div>

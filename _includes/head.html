@@ -1,0 +1,26 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+
+
+  <!-- from original site -->
+  <meta name="robots" content="index, follow">
+  <meta name="google-site-verification" content="2B-ZJI2ZrQrnmSpjvjTvwKVdS27o9MD1_9h54LaqsL4" />
+  <meta name="y_key" content="4a7443ab41de9aaa">
+  <meta name="msvalidate.01" content="7CF4D5E671598102BD9686018A503342" />
+  <meta name="alexaVerifyID" content="PRQtNAD6iYLTYCUP9EKpvNPXH-A" />
+  <meta name="robots" content="NOODP">
+  <meta name="robots" content="NOYDIR">
+  <meta name="Keywords" content="autism, autistic, otago, dunedin, parents, ABA therapy" />
+  <meta http-equiv="language" content="EN">
+  <meta http-equiv="Reply-to" content="walter@vitalcolour.co.nz">
+ 
+</head>
