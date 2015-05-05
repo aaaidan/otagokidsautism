@@ -9,17 +9,3 @@
 
 	min-height: 100%;
 }
-
-.l-home-cols {
-	@extend %clearfix;
-}
-
-.l-home-col-1 {
-	width: 522px;
-	float:left;
-}
-
-.l-home-col-2 {
-	float:left;
-	width: 428px;
-}
