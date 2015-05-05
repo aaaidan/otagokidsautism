@@ -12,7 +12,7 @@ layout: home
 
 	{% for post in site.posts %}
 	<div class="home-news-post-wrapper">      
-		<span class="dates">{{ post.date }}</span>
+		<span class="dates">{{ post.date | date_to_long_string }}</span>
 		<h1>{{ post.title }}</h1>
 		{{ post.content }}
 	</div>
@@ -37,7 +37,36 @@ layout: home
 		<li> <a href="/profiles.html">Our children</a> range from pre-school to school age.</li> 
 		<li> While ABA is government funded in some countries, it is not yet publicly funded in New Zealand.</li>
 		</ul>
+
+<h2> Our Givealittle donation widget</h2>
+  
+   <p>
+<iframe height="450" width="250" src="http://givealittle.co.nz/widget/org/otagokidsautism/light-skyscraper" frameborder="0" seamless="seamless"></iframe>
+   </p>
+   <p>
+ </p><h2>  Please click on button below to make <br>
+ a donation on our website.</h2>
+   <div class="home-donation"><span id="rollover"><a href="/donation_form.html" target="_parent"></a></span></div>
+   <div class="clearfloat"></div>
+         <h2>Follow us on</h2>
+  <p>    
+      <!-- AddThis Button BEGIN -->
+</p><div class="addthis_toolbox addthis_default_style addthis_32x32_style socialMediaLinks">
+<a class="addthis_button_facebook_follow at300b" addthis:userid="pages/Otago-Childrens-Autism-Support-Group/358122794315118" href="http://www.facebook.com/pages/Otago-Childrens-Autism-Support-Group/358122794315118" target="_blank" title="Follow on Facebook"><span class="at4-icon aticon-facebook" style="background-color: rgb(48, 88, 145);"><span class="at_a11y">Share on facebook</span></span><span class="addthis_follow_label">Facebook</span></a>
+<a class="addthis_button_email addthis_button_preferred_3 at300b" target="_blank" title="Email" href="#"><span class="at4-icon aticon-email" style="background-color: rgb(115, 138, 141);"><span class="at_a11y">Share on email</span></span></a>
+<!--<a class="addthis_button_preferred_2"></a>-->
+<a class="addthis_button_compact at300m" href="#"><span class="at4-icon aticon-compact" style="background-color: rgb(252, 109, 76);"><span class="at_a11y">More Sharing Services</span></span></a>
+<a class="addthis_counter addthis_bubble_style" href="#" style="display: inline-block;"><a class="addthis_button_expanded" target="_blank" title="View more services" href="#">0</a><a class="atc_s addthis_button_compact"><span></span></a></a>
+<div class="atclear"></div></div>
+
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50a3134a792137fb"></script>
+<!-- AddThis Button END -->
+
 	</div>
 
 </div>
 </div>
+
+
+

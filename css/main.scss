@@ -55,6 +55,16 @@ $on-laptop:        800px;
 ;
 
 
+h1, h2, h3 {
+	color: $brand-color;
+	padding: 0px;
+	font-weight: normal;
+	line-height: 22px;
+	font-size: 20px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	margin-top: 20px;
+}
+
 .header-logo {
 	display: block;
 
@@ -82,8 +92,10 @@ $on-laptop:        800px;
 			padding: 0;
 		}
 		li {
+			position: relative;
+			display: inline-block; 
+			cursor: default; // for parental menu items
 			width: auto;
-			float: left;
 			list-style-type: none;
 			a {
 				display: block;
@@ -100,11 +112,54 @@ $on-laptop:        800px;
 				&:active, &:hover, &:focus {
 					background-color: #FFFFFF;
 					color: #739f3f;
-					letter-spacing: .01px;
-					font-weight: bold;
 				}
 			}
 		}
+
+		.page-link-menu {
+			&:active, &:hover, &:focus {
+				background: none;
+				color: #277395;
+			}
+		}
+
+		.page-link-menu-items {
+			display: none;
+			position: absolute;
+			min-width: 100%;
+			z-index: 1;
+			border: 1px solid #E5F3F3;
+			border-top: none;
+
+			box-shadow: 0 3px 3px -1px rgba(0,0,0,0.3);
+
+			&::after {
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background: white;
+				content: '';
+				z-index: -1;
+			}
+
+			li {
+				display: block;
+				white-space: nowrap;
+
+				a {
+					padding: 12px 20px;
+				}
+			}
+		}
+		
+		.page-link-menu:hover + .page-link-menu-items,
+		.page-link-menu-items:hover {
+			display: block;
+		}
+
 	}
 }
 
