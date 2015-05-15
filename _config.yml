@@ -8,10 +8,10 @@ baseurl: "/otagokidsautism" # the subpath of your site, e.g. /blog/
 url: "http://aaaidan.github.io/otagokidsautism/" # the base hostname & protocol for your site
 twitter_username: otagokidsautism
 
+
 navigation:
 - title: Home
   url: /
-
 - title: Therapy
   children:
   - title: Introduction to ABA Therapy
@@ -20,7 +20,6 @@ navigation:
     url: /therapists/
   - title: Accreditation and Management
     url: /accreditation/
-
 - title: Kids & Parents
   children:
   - title: Diagnosis of Autism
@@ -29,16 +28,12 @@ navigation:
     url: /children/
   - title: Citations from Parents
     url: /citations/
-
 - title: Funding
   url: /funding/
-
 - title: Contact us
   url: /contact/
-
 - title: Links
   url: /links/
-
 
 # Build settings
 markdown: kramdown

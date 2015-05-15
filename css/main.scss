@@ -109,17 +109,10 @@ h1, h2, h3 {
 				font-family: arial, sans-serif;
 				font-size: 14px;
 				font-weight: bold;
-				&:active, &:hover, &:focus {
+				&:active, &:hover, &:focus, &.page-link-menu-active {
 					background-color: #FFFFFF;
 					color: #739f3f;
 				}
-			}
-		}
-
-		.page-link-menu {
-			&:active, &:hover, &:focus {
-				background: none;
-				color: #277395;
 			}
 		}
 
