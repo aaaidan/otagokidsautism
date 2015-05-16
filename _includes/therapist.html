@@ -1,0 +1,22 @@
+{% for t in site.therapists %}
+  {% assign therapist_id = t.url | split: '/' | last | split: '.' | first %}
+  {% if therapist_id == include.therapist %}
+    {% assign therapist = t %}
+  {% endif %} 
+{% endfor %}
+
+{% unless therapist %}
+  <div>Error (couldn't find {{include.therapist}}).</div>
+{% endunless %}
+
+{% if therapist %}
+  {% assign therapist_id = therapist..url | split: '/' | last | split: '.' | first %}
+  {% assign therapist_photo_baseurl = site.baseurl | append: '/images/therapists/' %}
+  {% assign therapist_photo_path = therapist_id | prepend: therapist_photo_baseurl | append: '.jpg' %}
+  <div class="">
+    <h2>Hi, I'm {{ therapist.name }}</h2>
+    <img src="{{therapist_photo_path}}" />
+    {{therapist.content}}
+  </div>
+
+{% endif %}

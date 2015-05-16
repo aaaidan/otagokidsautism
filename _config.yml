@@ -35,5 +35,8 @@ navigation:
 - title: Links
   url: /links/
 
+collections:
+- therapists
+
 # Build settings
 markdown: kramdown

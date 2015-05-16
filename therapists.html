@@ -3,3 +3,22 @@ layout: page
 title: Our Therapists
 permalink: /therapists/
 ---
+
+{% comment %}
+At the time of writing, GitHub's version of Jekyll couldn't sort collections.
+This was fixed in Jekyll on 11 May 2015 ... https://github.com/jekyll/jekyll/pull/2345
+
+In the meantime, we just list the therapists manually.
+{% endcomment %}
+
+<div class="l-post-2col">
+  <div class="l-col">
+    {% include therapist.html therapist="carmen" %}
+    {% include therapist.html therapist="jess" %}
+    {% include therapist.html therapist="naomi" %}
+  </div>
+  <div class="l-col">
+    {% include therapist.html therapist="nick" %}
+    {% include therapist.html therapist="emily" %}
+  </div>
+</div>
