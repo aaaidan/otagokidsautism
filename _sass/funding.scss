@@ -1,0 +1,10 @@
+a.make-donation {
+	background: url(img/donate-buttons.gif);
+	width: 204px;
+	height: 36px;
+	display: inline-block;
+}
+
+a.make-donation:hover {
+	background-position-y: 36px;
+}
