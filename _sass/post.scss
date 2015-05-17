@@ -15,6 +15,16 @@
 	color: #333333;
 }
 
+.l-post-banner {
+	border-bottom: 1px solid #dbe9eb;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+}
+
+.post-header + .post-content .l-post-banner:first-child {
+	margin-top: -10px;
+}
+
 .l-post-2col {
 
 	@extend %clearfix;
@@ -34,6 +44,12 @@
 		}
 		&:last-of-type {
 			padding-right: 0;
+			border-right: none;
+		}
+	}
+
+	&.no-dividers {
+		.l-col {
 			border-right: none;
 		}
 	}
