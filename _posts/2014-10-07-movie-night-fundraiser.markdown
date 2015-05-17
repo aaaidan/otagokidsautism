@@ -1,6 +1,6 @@
 ---
-layout: post
 title:  "Movie night fundraiser"
+layout: post
 ---
 
 We’re running a movie night fundraiser on __Thursday 30th October at Metro Cinema__, Moray Place, Dunedin. 
