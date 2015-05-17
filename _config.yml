@@ -5,7 +5,7 @@ description: >
   Group of pro-active Dunedin parents who have autistic children, committed
   to helping organise and fundraise for intensive early interventions.
 baseurl: "/otagokidsautism" # the subpath of your site, e.g. /blog/
-url: "http://aaaidan.github.io/otagokidsautism/" # the base hostname & protocol for your site
+url: "http://aaaidan.github.io/" # the base hostname & protocol for your site
 twitter_username: otagokidsautism
 
 paginate: 3
