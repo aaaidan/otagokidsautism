@@ -6,10 +6,8 @@
 {% endfor %}
 
 {% unless therapist %}
-  <div>Error (couldn't find {{include.therapist}}).</div>
-{% endunless %}
-
-{% if therapist %}
+  <script>console.error("Couldn't find therapist '{{include.therapist}}'.");</script>
+{% else %}
   {% assign therapist_id = therapist..url | split: '/' | last | split: '.' | first %}
   {% assign therapist_photo_baseurl = site.baseurl | append: '/images/therapists/' %}
   {% assign therapist_photo_path = therapist_id | prepend: therapist_photo_baseurl | append: '.jpg' %}
@@ -19,4 +17,4 @@
     {{therapist.content}}
   </div>
 
-{% endif %}
+{% endunless %}
