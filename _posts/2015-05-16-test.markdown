@@ -1,0 +1,8 @@
+---
+layout: post
+title: Test Post
+---
+
+This is just a test post.
+
+Ignore this.

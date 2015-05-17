@@ -76,7 +76,7 @@ h1, h2, h3 {
 	background-position: right top;
 	border-bottom-width: 2px;
 	border-bottom-style: solid;
-	border-bottom-color: #E45127 !important; // TODO: Make this border part of a wrapping style-only div
+	border-bottom-color: $brand-color !important; // TODO: Make this border part of a wrapping style-only div
 	width: 950px;
 }
 
@@ -111,7 +111,7 @@ h1, h2, h3 {
 				font-weight: bold;
 				&:active, &:hover, &:focus, &.page-link-menu-active {
 					background-color: #FFFFFF;
-					color: #739f3f;
+					color: $link-hover-color;
 				}
 			}
 		}
@@ -173,7 +173,7 @@ h1, h2, h3 {
 		cursor: pointer;
 
 		&:hover {
-			color: #739f3f;
+			color: $link-hover-color;
 		}
 	}
 }
@@ -253,9 +253,9 @@ h1, h2, h3 {
 		text-transform: uppercase;
 	}
 	a:hover {
-		color: #739f3f;
+		color: $link-hover-color;
 		text-decoration: none;
-		border-bottom: 1px dotted #739f3f;
+		border-bottom: 1px dotted $link-hover-color;
 	}
 }
 
@@ -267,4 +267,5 @@ h1, h2, h3 {
 @import "home.scss";
 @import "post.scss";
 @import "therapists.scss";
-@import "funding.scss"
+@import "funding.scss";
+@import "pagination.scss";

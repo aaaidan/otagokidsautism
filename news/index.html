@@ -1,0 +1,26 @@
+---
+title: News Archive
+layout: page
+---
+
+<div class="l-post-banner no-border">
+<p>Here you will find all of our previous News articles that have been posted on the website</p>
+</div>
+
+<div class="l-home-cols">
+<div class="l-home-col-1">
+	{% include paginator.html %}
+
+	{% for post in paginator.posts %}
+	<div class="news-post-wrapper">
+		<span class="dates">{{ post.date | date_to_long_string }}</span>
+		<h1>{{ post.title }}</h1>
+		{{ post.content }}
+	</div>
+	{% endfor %}
+
+	{% include paginator.html %}
+</div>
+<div class="l-home-col-2">
+</div>
+</div>

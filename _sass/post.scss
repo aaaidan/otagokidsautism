@@ -3,7 +3,7 @@
 }
 
 .post h1 {
-	color: #739f3f;
+	color: $link-hover-color;
 }
 
 .post-header h1 {
@@ -12,13 +12,17 @@
 }
 
 .post-content h1 {
-	color: #333333;
+	color: $brand-color;
 }
 
 .l-post-banner {
 	border-bottom: 1px solid #dbe9eb;
 	margin-bottom: 20px;
 	padding-bottom: 10px;
+
+	&.no-border {
+		border-bottom: none;
+	}
 }
 
 .post-header + .post-content .l-post-banner:first-child {
