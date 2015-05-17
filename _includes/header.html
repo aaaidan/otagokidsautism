@@ -4,41 +4,7 @@
 
     <a href="{{ site.baseurl }}/" class="header-logo" title="{{ site.title }}"></a>
 
-    <nav>
-      <ul>
-      {% for p in site.navigation %}
-
-        {% unless p.children %}
-
-          {% assign isActive = '' %}
-          {% if p.url == page.url %}
-            {% assign isActive = ' page-link-menu-active' %}
-          {% endif %}
-
-          <li><a class="page-link{{ isActive }}" href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a></li>
-        {% else %}
-
-          {% assign isActive = '' %}
-          {% for q in p.children %}
-            {% if q.url == page.url %}
-              {% assign isActive = ' page-link-menu-active' %}
-            {% endif %}
-          {% endfor %}
-
-          <li>
-            <a class="page-link page-link-menu{{ isActive }}" href="" onclick="return false;">{{ p.title }}</a>
-            <ul class="page-link-menu-items">
-
-              {% for q in p.children %}
-              <li><a class="page-link" href="{{ q.url | prepend: site.baseurl }}">{{ q.title }}</a></li>
-              {% endfor %}
-
-            </ul>
-          </li>
-        {% endunless %}
-      {% endfor %}
-      </ul>
-    </nav>
+    {% include nav-menu.html %}
 
   </div>
 
