@@ -9,7 +9,7 @@ url: "http://aaaidan.github.io/" # the base hostname & protocol for your site
 twitter_username: otagokidsautism
 
 paginate: 3
-paginate_path: "/news/page:num/"
+paginate_path: "/news/:num/"
 
 permalink: /:categories/:year/:month/:title.html  
 
