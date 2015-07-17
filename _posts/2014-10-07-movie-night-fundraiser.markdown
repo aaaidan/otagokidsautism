@@ -1,9 +1,11 @@
 ---
-title:  "Movie night fundraiser"
+title: Movie night fundraiser
 layout: post
+published: true
 ---
 
-We’re running a movie night fundraiser on __Thursday 30th October at Metro Cinema__, Moray Place, Dunedin. 
+
+We’re running a movie night fundraiser on __Thursday 30th October at Metro Cinema__, Moray Place, Dunedin!
 
 The film is [Hector and the Search for Happiness][hector] (2014, UK). It’s the NZ opening night of the movie.
 
